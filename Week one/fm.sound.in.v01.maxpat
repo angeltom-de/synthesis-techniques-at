@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 210.0, 84.0, 817.0, 685.0 ],
+		"rect" : [ 153.0, 114.0, 817.0, 685.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,17 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 75.0, 463.0, 61.0, 22.0 ],
+					"text" : "send~ in1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-32",
 					"items" : "<empty>",
 					"maxclass" : "umenu",
@@ -48,16 +59,6 @@
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 188.0, 39.0, 100.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-29",
-					"maxclass" : "ezdac~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 100.5, 420.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -235,8 +236,33 @@
 , 			{
 				"box" : 				{
 					"basictuning" : 0,
+					"clipheight" : 88.0,
 					"data" : 					{
-						"clips" : [  ]
+						"clips" : [ 							{
+								"absolutepath" : "epno.aiff",
+								"filename" : "epno.aiff",
+								"filekind" : "audiofile",
+								"id" : "u899001033",
+								"selection" : [ 0.827981651376147, 1.0 ],
+								"loop" : 1,
+								"content_state" : 								{
+									"loop" : 1
+								}
+
+							}
+, 							{
+								"absolutepath" : "C:\\Users\\fm-lokal\\Documents\\GIT angeltom-de AT-privat\\synthesis-techniques-at\\synth-tech-media-master\\speech\\345836__krzysiunet__im-not-speaking-english.wav",
+								"filename" : "345836__krzysiunet__im-not-speaking-english.wav",
+								"filekind" : "audiofile",
+								"id" : "u092001045",
+								"selection" : [ 0.0, 1.0 ],
+								"loop" : 1,
+								"content_state" : 								{
+									"loop" : 1
+								}
+
+							}
+ ]
 					}
 ,
 					"followglobaltempo" : 0,
@@ -250,7 +276,7 @@
 					"originaltempo" : 0,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 420.0, 456.0, 154.0, 140.0 ],
+					"patching_rect" : [ 298.0, 447.0, 491.0, 178.0 ],
 					"pitchcorrection" : 0,
 					"quality" : "basic",
 					"timestretch" : [ 0 ]
@@ -424,7 +450,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
+					"destination" : [ "obj-13", 0 ],
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -453,7 +479,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 2 ],
-					"midpoints" : [ 429.5, 402.0, 60.0, 402.0, 60.0, 198.0, 350.5, 198.0 ],
+					"midpoints" : [ 307.5, 402.0, 60.0, 402.0, 60.0, 198.0, 350.5, 198.0 ],
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -465,23 +491,7 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-28" : [ "live.gain~", "live.gain~", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }

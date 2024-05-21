@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 455.0, 151.0, 224.0, 610.0 ],
+		"rect" : [ 95.0, 162.0, 224.0, 610.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,17 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 58.0, 259.0, 90.0, 22.0 ],
+					"text" : "\"random notes\""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "newobj",
@@ -89,21 +100,28 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "fm.midi.in.v1.maxpat",
-				"bootpath" : "~/Documents/Max MSP/Week one",
+				"bootpath" : "~/Documents/GIT angeltom-de AT-privat/synthesis-techniques-at/Week one",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fm.sound.in.v01.maxpat",
-				"bootpath" : "~/Documents/Max MSP/Week one",
+				"bootpath" : "~/Documents/GIT angeltom-de AT-privat/synthesis-techniques-at/Week one",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fm.sound.out.v01.maxpat",
-				"bootpath" : "~/Documents/Max MSP/Week one",
+				"bootpath" : "~/Documents/GIT angeltom-de AT-privat/synthesis-techniques-at/Week one",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "random notes.maxpat",
+				"bootpath" : "~/Documents/GIT angeltom-de AT-privat/synthesis-techniques-at/Week one",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
